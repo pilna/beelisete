@@ -1,0 +1,439 @@
+{
+    "spriteSheetURL": "beelisete/assets/images/grass.png",
+    "sprites": [
+        {
+            "name": "grass_1",
+            "x": 0,
+            "y": 0,
+            "width": 32,
+            "height": 32
+        },
+        {
+            "name": "grass_2",
+            "x": 32,
+            "y": 0,
+            "width": 32,
+            "height": 32
+        },
+        {
+            "name": "grass_3",
+            "x": 64,
+            "y": 0,
+            "width": 32,
+            "height": 32
+        },
+        {
+            "name": "grass_4",
+            "x": 96,
+            "y": 0,
+            "width": 32,
+            "height": 32
+        },
+        {
+            "name": "flower_1",
+            "x": 128,
+            "y": 0,
+            "width": 32,
+            "height": 32
+        },
+        {
+            "name": "flower_2",
+            "x": 160,
+            "y": 0,
+            "width": 32,
+            "height": 32
+        },
+        {
+            "name": "flower_3",
+            "x": 192,
+            "y": 0,
+            "width": 32,
+            "height": 32
+        },
+        {
+            "name": "flower_4",
+            "x": 224,
+            "y": 0,
+            "width": 32,
+            "height": 32
+        },
+        {
+            "name": "grass_5",
+            "x": 0,
+            "y": 32,
+            "width": 32,
+            "height": 32
+        },
+        {
+            "name": "grass_6",
+            "x": 32,
+            "y": 32,
+            "width": 32,
+            "height": 32
+        },
+        {
+            "name": "grass_7",
+            "x": 64,
+            "y": 32,
+            "width": 32,
+            "height": 32
+        },
+        {
+            "name": "grass_8",
+            "x": 96,
+            "y": 32,
+            "width": 32,
+            "height": 32
+        },
+        {
+            "name": "flower_5",
+            "x": 128,
+            "y": 32,
+            "width": 32,
+            "height": 32
+        },
+        {
+            "name": "flower_6",
+            "x": 160,
+            "y": 32,
+            "width": 32,
+            "height": 32
+        },
+        {
+            "name": "flower_7",
+            "x": 192,
+            "y": 32,
+            "width": 32,
+            "height": 32
+        },
+        {
+            "name": "flower_8",
+            "x": 224,
+            "y": 32,
+            "width": 32,
+            "height": 32
+        },
+        {
+            "name": "grass_9",
+            "x": 0,
+            "y": 64,
+            "width": 32,
+            "height": 32
+        },
+        {
+            "name": "grass_10",
+            "x": 32,
+            "y": 64,
+            "width": 32,
+            "height": 32
+        },
+        {
+            "name": "grass_11",
+            "x": 64,
+            "y": 64,
+            "width": 32,
+            "height": 32
+        },
+        {
+            "name": "grass_12",
+            "x": 96,
+            "y": 64,
+            "width": 32,
+            "height": 32
+        },
+        {
+            "name": "flower_9",
+            "x": 128,
+            "y": 64,
+            "width": 32,
+            "height": 32
+        },
+        {
+            "name": "flower_10",
+            "x": 160,
+            "y": 64,
+            "width": 32,
+            "height": 32
+        },
+        {
+            "name": "flower_11",
+            "x": 192,
+            "y": 64,
+            "width": 32,
+            "height": 32
+        },
+        {
+            "name": "flower_12",
+            "x": 224,
+            "y": 64,
+            "width": 32,
+            "height": 32
+        },
+        {
+            "name": "grass_13",
+            "x": 0,
+            "y": 96,
+            "width": 32,
+            "height": 32
+        },
+        {
+            "name": "grass_14",
+            "x": 32,
+            "y": 96,
+            "width": 32,
+            "height": 32
+        },
+        {
+            "name": "grass_15",
+            "x": 64,
+            "y": 96,
+            "width": 32,
+            "height": 32
+        },
+        {
+            "name": "grass_16",
+            "x": 96,
+            "y": 96,
+            "width": 32,
+            "height": 32
+        },
+        {
+            "name": "flower_13",
+            "x": 128,
+            "y": 96,
+            "width": 32,
+            "height": 32
+        },
+        {
+            "name": "flower_14",
+            "x": 160,
+            "y": 96,
+            "width": 32,
+            "height": 32
+        },
+        {
+            "name": "flower_15",
+            "x": 192,
+            "y": 96,
+            "width": 32,
+            "height": 32
+        },
+        {
+            "name": "flower_16",
+            "x": 224,
+            "y": 96,
+            "width": 32,
+            "height": 32
+        },
+        {
+            "name": "full_stab_1",
+            "x": 0,
+            "y": 128,
+            "width": 32,
+            "height": 32
+        },
+        {
+            "name": "full_stab_2",
+            "x": 32,
+            "y": 128,
+            "width": 32,
+            "height": 32
+        },
+        {
+            "name": "right_stab_1",
+            "x": 64,
+            "y": 128,
+            "width": 32,
+            "height": 32
+        },
+        {
+            "name": "left_stab_1",
+            "x": 96,
+            "y": 128,
+            "width": 32,
+            "height": 32
+        },
+        {
+            "name": "bottom_stab_1",
+            "x": 128,
+            "y": 128,
+            "width": 32,
+            "height": 32
+        },
+        {
+            "name": "bottom_stab_2",
+            "x": 160,
+            "y": 128,
+            "width": 32,
+            "height": 32
+        },
+        {
+            "name": "bottom_stab_3",
+            "x": 192,
+            "y": 128,
+            "width": 32,
+            "height": 32
+        },
+        {
+            "name": "bottom_stab_4",
+            "x": 224,
+            "y": 128,
+            "width": 32,
+            "height": 32
+        },
+        {
+            "name": "full_stab_3",
+            "x": 0,
+            "y": 160,
+            "width": 32,
+            "height": 32
+        },
+        {
+            "name": "full_stab_4",
+            "x": 32,
+            "y": 160,
+            "width": 32,
+            "height": 32
+        },
+        {
+            "name": "right_stab_2",
+            "x": 64,
+            "y": 160,
+            "width": 32,
+            "height": 32
+        },
+        {
+            "name": "left_stab_2",
+            "x": 96,
+            "y": 160,
+            "width": 32,
+            "height": 32
+        },
+        {
+            "name": "upper_stab_1",
+            "x": 128,
+            "y": 160,
+            "width": 32,
+            "height": 32
+        },
+        {
+            "name": "upper_stab_2",
+            "x": 160,
+            "y": 160,
+            "width": 32,
+            "height": 32
+        },
+        {
+            "name": "upper_stab_3",
+            "x": 192,
+            "y": 160,
+            "width": 32,
+            "height": 32
+        },
+        {
+            "name": "upper_stab_4",
+            "x": 224,
+            "y": 160,
+            "width": 32,
+            "height": 32
+        },
+        {
+            "name": "full_stab_5",
+            "x": 0,
+            "y": 192,
+            "width": 32,
+            "height": 32
+        },
+        {
+            "name": "full_stab_6",
+            "x": 32,
+            "y": 192,
+            "width": 32,
+            "height": 32
+        },
+        {
+            "name": "right_stab_3",
+            "x": 64,
+            "y": 192,
+            "width": 32,
+            "height": 32
+        },
+        {
+            "name": "left_stab_3",
+            "x": 96,
+            "y": 192,
+            "width": 32,
+            "height": 32
+        },
+        {
+            "name": "fragment_stab_1",
+            "x": 128,
+            "y": 192,
+            "width": 32,
+            "height": 32
+        },
+        {
+            "name": "fragment_stab_2",
+            "x": 160,
+            "y": 192,
+            "width": 32,
+            "height": 32
+        },
+        {
+            "name": "fragment_stab_3",
+            "x": 192,
+            "y": 192,
+            "width": 32,
+            "height": 32
+        },
+        {
+            "name": "fragment_stab_4",
+            "x": 224,
+            "y": 192,
+            "width": 32,
+            "height": 32
+        },
+        {
+            "name": "full_stab_7",
+            "x": 0,
+            "y": 224,
+            "width": 32,
+            "height": 32
+        },
+        {
+            "name": "full_stab_8",
+            "x": 32,
+            "y": 224,
+            "width": 32,
+            "height": 32
+        },
+        {
+            "name": "right_stab_4",
+            "x": 64,
+            "y": 224,
+            "width": 32,
+            "height": 32
+        },
+        {
+            "name": "left_stab_4",
+            "x": 96,
+            "y": 224,
+            "width": 32,
+            "height": 32
+        },
+        {
+            "name": "corner_stab_right",
+            "x": 128,
+            "y": 224,
+            "width": 32,
+            "height": 32
+        },
+        {
+            "name": "corner_stab_left",
+            "x": 160,
+            "y": 224,
+            "width": 32,
+            "height": 32
+        }
+    ]
+}

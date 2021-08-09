@@ -1,0 +1,33 @@
+{
+    "spriteSheetURL": "beelisete/assets/images/wall.png",
+    "sprites": [
+        {
+            "name": "wall_front",
+            "x": 32,
+            "y": 192,
+            "width": 128,
+            "height": 64
+        },
+        {
+            "name": "stone_upper_border_left",
+            "x": 32,
+            "y": 32,
+            "width": 32,
+            "height": 32
+        },
+        {
+            "name": "stone_upper_border_right",
+            "x": 96,
+            "y": 32,
+            "width": 32,
+            "height": 32
+        },
+        {
+            "name": "wall_corner_left",
+            "x": 152,
+            "y": 32,
+            "width": 32,
+            "height": 64
+        }
+    ]
+}   
