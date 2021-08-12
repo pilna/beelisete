@@ -1,8 +1,32 @@
+### ⭐ Beelisete ⭐
+
+## ⚙️ Technologies: 
+
+![python](https://img.shields.io/badge/-Python-%233776AB?logo=python&logoColor=white)
+
+## TODO List
+
+❌ tache a faire:
+
+1. scene de creation de room
+
+2. modifier l'implémentation d'animation des personnage (délégation a une classe)
+
+3. coder les première IA.
+
+4. ajouter une caméra movible autour du player
+
+5. ajouter les hitbox dans le json des tileset
+
+⏲️ tache in progress:
+
+1. crée un fichier de config pour modifier les constante dans le code
+
 ## 📕 Information concernant le jeux
 
-Le but de ce jeux 🎯 seras d'évoluer dans un donjon 🏠 sous forme de labyrinthe. Cependant il y'auras une contrainte de temps ⏱️ dans chaque salle 🛖, ci le joueur reste trop longtemps dans une salle il mourras ☠️. Le but seras de tuer des monstre et de récupérrer des bonus / équipements dans le but de vraincre le boss du donjon.
+Le but de ce jeux 🎯 seras d'évoluer dans un donjon 🏠 sous forme de labyrinthe. Cependant il y'auras une contrainte de temps ⏱️ dans chaque salle 🛏️, ci le joueur reste trop longtemps dans une salle il mourras ☠️. Le but seras de tuer des monstre et de récupérrer des bonus / équipements dans le but de vraincre le boss du donjon.
 
-🛖 il y'auras 4 types de salle:
+🛏️ il y'auras 4 types de salle:
 
 1. salle d'entrée 🚪, ce seras une salle possèdant un chronomètre ⏱️ infini on pourras y faire nos meilleur pause pipi 🚽.
 
