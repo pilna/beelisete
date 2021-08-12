@@ -11,7 +11,6 @@ class Tile:
         self.x = x
         self.y = y
         self.walkable = walkable
-        print(type(self).image)
     
 
     def display(self, surface):

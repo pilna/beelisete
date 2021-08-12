@@ -1,7 +1,8 @@
 from __future__ import annotations
 from abc import ABC, abstractmethod
-
 import pygame
+
+from beelisete.src.views.sceneManager import SceneManager
 
 class Scene:
 

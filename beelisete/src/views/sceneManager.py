@@ -1,9 +1,10 @@
-
+import pygame
 
 class SceneManager:
 
-    def __init__(self, starting_scene):
-        self.current_scene = starting_scene
+    def __init__(self):
+        self.current_scene = None
     
     def go_to(self, scene):
+        scene.scene_manager = self
         self.current_scene = scene

@@ -6,11 +6,11 @@ class SpriteSheet:
     def __init__(self, file_path):
         self.sheet = pygame.image.load(file_path)
     
-    def image_at(self, rectangle):
+    def image_at(self, rectangle, color_key=(0, 0, 0)):
         rect = pygame.Rect(rectangle)
-        print(rect)
         image = pygame.Surface(rect.size)
         image.blit(self.sheet, (0, 0), rect)
+        image.set_colorkey(color_key)
         return image
     
     @staticmethod

@@ -8,7 +8,8 @@ class Application:
 
     def __init__(self):
         self.screen = pygame.display.set_mode((1080, 720))
-        self.scene_manager = SceneManager(Menu())
+        self.scene_manager = SceneManager()
+        self.scene_manager.go_to(Menu())
         self.is_running = True
 
     def run(self):

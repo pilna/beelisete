@@ -10,7 +10,6 @@ class Entity(metaclass=ABCMeta):
         self.heal_point = heal_point
         self.max_heal = max(heal_point, max_heal)
 
-    @abstractmethod
     def get_image(self):
         raise NotImplementedError
     
