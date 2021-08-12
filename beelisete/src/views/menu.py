@@ -4,11 +4,11 @@ from random import choices, randint
 from beelisete.src.views.scene import Scene
 from beelisete.src.views.game import Game
 from beelisete.src.views.option import Option
-from beelisete.src.views.Button import Button
+from beelisete.src.model.button import Button
 from beelisete.src.model.tile import Tile
-from beelisete.src.model.bigDemon import BigDemon
-from beelisete.src.model.player import Player
-from beelisete.src.model.lizard import Lizard
+from beelisete.src.model.entity.bigDemon import BigDemon
+from beelisete.src.model.entity.player import Player
+from beelisete.src.model.entity.lizard import Lizard
 
 class Menu(Scene):
 

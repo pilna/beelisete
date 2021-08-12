@@ -1,7 +1,7 @@
 import pygame
 
 from beelisete.src.views.scene import Scene
-from beelisete.src.views.Button import Button
+from beelisete.src.model.button import Button
 
 class Option(Scene):
 

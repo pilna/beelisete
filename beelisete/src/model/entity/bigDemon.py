@@ -1,4 +1,4 @@
-from beelisete.src.model.Entity import Entity
+from beelisete.src.model.entity.entity import Entity
 from beelisete.src.model.animation import Animated
 
 
@@ -6,4 +6,4 @@ from beelisete.src.model.animation import Animated
 class BigDemon(Entity):
 
     def __init__(self,x, y):
-        super().__init__(x, y, 5)
+        super().__init__(x, y, 32, 56, 5)

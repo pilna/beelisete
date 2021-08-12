@@ -1,10 +1,13 @@
 from abc import ABCMeta, abstractmethod
+import pygame
 
 class Entity(metaclass=ABCMeta):
 
-    def __init__(self, x, y, heal_point, max_heal=0):
+    def __init__(self, x, y, width, height, heal_point, max_heal=0):
         self.x = x
         self.y = y
+        self.width = width
+        self.height = height
         self.velocity_x = 0
         self.velocity_y = 0
         self.heal_point = heal_point
@@ -23,4 +26,4 @@ class Entity(metaclass=ABCMeta):
         return self.heal_point > 0
     
     def display(self, surface):
-        surface.blit(self.get_image(), (self.x, self.y))
+        surface.blit(pygame.transform.scale(self.get_image(), (self.width, self.height)), (self.x, self.y))
