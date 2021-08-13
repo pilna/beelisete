@@ -22,6 +22,31 @@
 
 1. crée un fichier de config pour modifier les constante dans le code
 
+## 🔧 Install and run the game
+
+1. clone the repo
+
+```sh
+git clone https://github.com/pilna/beelisete.git
+```
+
+2. move to the file
+
+```sh
+cd beelisete
+```
+
+3. install the dependencies
+```sh
+python -m pip install -r requirements.txt
+```
+
+4. launch the game
+
+```
+python -m beelisete
+```
+
 ## 📕 Information concernant le jeux
 
 Le but de ce jeux 🎯 seras d'évoluer dans un donjon 🏠 sous forme de labyrinthe. Cependant il y'auras une contrainte de temps ⏱️ dans chaque salle 🛏️, ci le joueur reste trop longtemps dans une salle il mourras ☠️. Le but seras de tuer des monstre et de récupérrer des bonus / équipements dans le but de vraincre le boss du donjon.
