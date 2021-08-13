@@ -8,19 +8,15 @@
 
 ❌ tache a faire:
 
-1. scene de creation de room
-
 2. modifier l'implémentation d'animation des personnage (délégation a une classe)
 
 3. coder les première IA.
-
-4. ajouter une caméra movible autour du player
 
 5. ajouter les hitbox dans le json des tileset
 
 ⏲️ tache in progress:
 
-1. crée un fichier de config pour modifier les constante dans le code
+1. scene de creation de room
 
 ## 🔧 Install and run the game
 
