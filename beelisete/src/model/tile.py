@@ -13,6 +13,6 @@ class Tile:
         self.walkable = walkable
     
 
-    def display(self, surface):
-        surface.blit(type(self).image[self.name], (self.x, self.y))
+    def display(self, surface, offset=(0, 0)):
+        surface.blit(type(self).image[self.name], (self.x - offset[0], self.y - offset[1]))
     

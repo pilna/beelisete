@@ -25,5 +25,5 @@ class Entity(metaclass=ABCMeta):
     def is_alive(self):
         return self.heal_point > 0
     
-    def display(self, surface):
-        surface.blit(pygame.transform.scale(self.get_image(), (self.width, self.height)), (self.x, self.y))
+    def display(self, surface, offset=(0, 0)):
+        surface.blit(pygame.transform.scale(self.get_image(), (self.width, self.height)), (self.x - offset[0], self.y - offset[1]))

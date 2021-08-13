@@ -4,7 +4,7 @@ import pygame
 
 from beelisete.src.views.sceneManager import SceneManager
 
-class Scene:
+class Scene(ABC):
 
     @abstractmethod
     def handle_event(self, event: pygame.event.Event) -> None:

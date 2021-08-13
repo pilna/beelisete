@@ -5,6 +5,7 @@ import beelisete.src.config as cfg
 from beelisete.src.views.scene import Scene
 from beelisete.src.views.game import Game
 from beelisete.src.views.option import Option
+from beelisete.src.views.roomEditor import RoomEditor
 from beelisete.src.model.button import Button
 from beelisete.src.model.tile import Tile
 from beelisete.src.model.entity.bigDemon import BigDemon
@@ -17,9 +18,10 @@ class Menu(Scene):
     def __init__(self):
         Scene.__init__(self)
         self.buttons = [
-            Button("Play", 0, 80, cfg.WIDTH, 150, on_click=self.go_to_game_scene),
-            Button("Options", 0, 280, cfg.WIDTH, 150, on_click=self.go_to_options_scene),
-            Button("Quit", 0, 480, cfg.WIDTH, 150, on_click=self.close_application)
+            Button("Play", 0, 0, cfg.WIDTH, 150, on_click=self.go_to_game_scene),
+            Button("Room Editor", 0, 0, cfg.WIDTH, 150, on_click=self.go_to_room_editor),
+            Button("Options", 0, 0, cfg.WIDTH, 150, on_click=self.go_to_options_scene),
+            Button("Quit", 0, 0, cfg.WIDTH, 150, on_click=self.close_application)
         ]
         self.index_active_button = 0
         self.backgrounds = self.__load_background()
@@ -107,6 +109,10 @@ class Menu(Scene):
 
     def go_to_game_scene(self):
         self.scene_manager.go_to(Game())
+    
+    
+    def go_to_room_editor(self):
+        self.scene_manager.go_to(RoomEditor())
         
 
     def handle_event(self, event: pygame.event.Event):
