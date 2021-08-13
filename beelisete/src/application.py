@@ -1,13 +1,14 @@
 from __future__ import annotations
 import pygame
 
+import beelisete.src.config as cfg
 from beelisete.src.views.menu import Menu
 from beelisete.src.views.sceneManager import SceneManager
 
 class Application:
 
     def __init__(self):
-        self.screen = pygame.display.set_mode((1080, 720))
+        self.screen = pygame.display.set_mode((cfg.WIDTH, cfg.HEIGHT))
         self.scene_manager = SceneManager()
         self.scene_manager.go_to(Menu())
         self.is_running = True
