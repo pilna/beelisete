@@ -1,3 +1,5 @@
+import pygame
+
 from beelisete.src.model.spriteSheet import SpriteSheet
 
 class Tile:
@@ -11,6 +13,10 @@ class Tile:
         self.x = x
         self.y = y
         self.walkable = walkable
+    
+
+    def get_rectangle(self):
+        return pygame.Rect(self.x, self.y, Tile.image[self.name].get_width(), Tile.image[self.name].get_height())
     
 
     def display(self, surface, offset=(0, 0)):

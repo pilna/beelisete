@@ -4,6 +4,8 @@ import pygame
 import beelisete.src.config as cfg
 from beelisete.src.model.color import Color
 from beelisete.src.model.camera import Camera
+from beelisete.src.model.tilePickerMenu import TilePickerMenu
+from beelisete.src.model.direction import Direction
 from beelisete.src.views.scene import Scene
 from beelisete.src.model.tile import Tile
 from beelisete.src.model.entity.player import Player
@@ -16,9 +18,9 @@ class RoomEditor(Scene):
         self.camera = Camera(self.player)
         self.tiles = [
             Tile("flower_6", 0, 0),
-            Tile("flower_3", -64, -64),
-            Tile("grass_1", -946, -512)
+            Tile("flower_3", -64, -64)
         ]
+        self.tile_picker_menu = TilePickerMenu(cfg.WIDTH - 192, 0, 192, cfg.HEIGHT)
         self.show_grid = True
 
 
@@ -39,6 +41,8 @@ class RoomEditor(Scene):
     
     
     def handle_event(self, event: pygame.event.Event) -> None:
+        mouse_position = pygame.mouse.get_pos()
+
         if event.type == pygame.KEYUP:
             if event.key in [pygame.K_z, pygame.K_s]:
                 self.player.velocity_y = 0
@@ -56,12 +60,34 @@ class RoomEditor(Scene):
                 self.player.velocity_x = -1
             if event.key == pygame.K_e:
                 self.show_grid = not self.show_grid
+
+        if event.type == pygame.MOUSEBUTTONDOWN and event.button == 1:
+            if self.tile_picker_menu.mouse_is_over(mouse_position):
+                self.tile_picker_menu.handle_click(mouse_position)
+            else:
+                self.add_tiles(mouse_position)
+        
+        if event.type == pygame.MOUSEWHEEL and self.tile_picker_menu.mouse_is_over(mouse_position):
+            scroll_direction = Direction.UP if event.y > 0 else Direction.DOWN
+            self.tile_picker_menu.handle_scroll(scroll_direction)
             
 
+    def convert_position_in_tiles_base(self, position):
+        return position[0] // cfg.TILE_WIDTH * cfg.TILE_WIDTH, position[1] // cfg.TILE_HEIGHT * cfg.TILE_HEIGHT
+
+
+    def add_tiles(self, mouse_position):
+        x = mouse_position[0] + self.camera.offset_x
+        y = mouse_position[1] + self.camera.offset_y
+        x, y = self.convert_position_in_tiles_base((x, y))
+        self.tiles.append(Tile(self.tile_picker_menu.current_tiles_selected.name, x, y))
+
+
     def update(self) -> None:
-        self.player.update()
+        self.player.update() 
         self.camera.update()
     
+
     def render(self, surface: pygame.Surface) -> None:
         surface.fill(Color.white)
 
@@ -70,4 +96,6 @@ class RoomEditor(Scene):
 
         for tile in self.tiles:
             tile.display(surface, self.camera.get_offset())
+
+        self.tile_picker_menu.display(surface, self.camera.get_offset())
         
